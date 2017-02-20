@@ -13,7 +13,9 @@ RUN apt-get update && \
 
 WORKDIR /root
 
-RUN wget -O- $URL | tar zx && mv M* masurca && cd masurca
+RUN wget -O- $URL | tar zx
+RUN mv M* masurca
+RUN cd masurca
 
 RUN ./install.sh
 
