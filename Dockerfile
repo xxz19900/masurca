@@ -15,7 +15,7 @@ WORKDIR /root
 
 RUN wget -O- $URL | tar zx
 RUN mv M* masurca
-RUN cd masurca
+WORKDIR /root/masurca
 
 RUN ./install.sh
 
