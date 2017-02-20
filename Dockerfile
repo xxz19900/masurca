@@ -19,7 +19,6 @@ WORKDIR /root/masurca
 
 RUN ./install.sh
 
-RUN mkdir /data
 WORKDIR /data
 
 CMD masurca
