@@ -24,4 +24,4 @@ RUN echo 'masurca $CONFIG && ./assemble.sh' > /usr/local/bin/assemble && chmod +
 
 WORKDIR /data
 
-CMD masurca
+CMD bash
