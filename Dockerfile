@@ -20,7 +20,7 @@ WORKDIR /root/masurca
 
 RUN ./install.sh
 RUN echo "cp /root/masurca/sr_config_example.txt /data/" > /usr/local/bin/example && chmod +x /usr/local/bin/example
-RUN echo 'masurca $CONFIG' > /usr/local/bin/prepare && chmod +x /usr/local/bin/prepare
+RUN echo 'masurca $CONFIG && ./assemble.sh' > /usr/local/bin/prepare && chmod +x /usr/local/bin/prepare
 
 WORKDIR /data
 
