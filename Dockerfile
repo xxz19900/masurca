@@ -10,7 +10,7 @@ ENV PATH /data:/root/masurca/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/b
 
 RUN apt-get update && \
  apt-get upgrade -y && \
- apt-get install -y wget gcc g++ make libboost-all-dev libzip2 libbz2-dev
+ apt-get install -y wget gcc g++ make libboost-all-dev libzip2 libbz2-dev parallel
 
 WORKDIR /root
 
